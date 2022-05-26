@@ -89,7 +89,7 @@ public class AppTest {
         }
         ConsumerRecord<String, String> record = consumerRecords.poll(5, TimeUnit.SECONDS);
         Assertions.assertThat(record).isNull();
-        Assertions.assertThat(app.counter.get()).isEqualTo(3);
+        Assertions.assertThat(app.counter.get()).isEqualTo(1);
     }
 
     private KafkaProducer<String, String> producer() {

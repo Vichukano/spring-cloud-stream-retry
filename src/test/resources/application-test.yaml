@@ -7,6 +7,9 @@ spring:
         group: test-1
         destination: topic-in
         binder: in-binder
+        consumer:
+          retryableExceptions:
+            ru.vichukano.kafka.binder.retry.App.MyCustomException: false
       processor-out-0:
         destination: topic-out
         binder: out-binder

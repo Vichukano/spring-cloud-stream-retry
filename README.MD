@@ -1,0 +1,1 @@
+[stack overflow question](https://stackoverflow.com/questions/72382838/spring-cloud-stream-kafka-binder-retry)
